@@ -1,7 +1,7 @@
-﻿using BlogAppCli;
+﻿using DumbnotesCli;
 using System;
 
-namespace BlogAppCli;
+namespace DumbnotesCli;
 
 internal class Program
 {

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace BlogAppCli
+namespace DumbnotesCli
 {
     public class CommandService
     {

@@ -1,4 +1,4 @@
-﻿namespace BlogAppCli
+﻿namespace DumbnotesCli
 {
     public class ScriptSelector
     {

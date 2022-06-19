@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace BlogAppCli
+namespace DumbnotesCli
 {
     public class Config
     {
