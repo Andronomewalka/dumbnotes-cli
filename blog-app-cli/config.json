@@ -1,0 +1,34 @@
+{
+	"folders": {
+		"client": "C:\\Users\\Andrew\\source\\repos\\blog-app",
+		"admin": "C:\\Users\\Andrew\\source\\repos\\blog-app-admin",
+		"api": "C:\\Users\\Andrew\\source\\repos\\blog-app-api"
+	},
+	"scripts": [
+		{
+			"name": "dev-client",
+			"command": "nt --title \"client dev\" -d \"{clientDestination}\" pwsh -c code . && yarn run dev; nt --title \"api prod\" -d \"{apiDestination}\" pwsh -c yarn run postinstall && yarn run start-dev-db",
+			"description": "client dev | admin none | api prod | db dev"
+		},
+		{
+			"name": "dev-admin",
+			"command": "nt --title \"admin dev\" -d \"{adminDestination}\" pwsh -c code . && yarn run dev; nt --title \"api prod\" -d \"{apiDestination}\" pwsh -c yarn run postinstall && yarn run start-dev-db",
+			"description": "client dev | admin dev | api prod | db dev"
+		},
+		{
+			"name": "dev-client-admin",
+			"command": "nt --title \"client dev\" -d \"{clientDestination}\" pwsh -c code . && yarn run dev; nt --title \"admin dev\" -d \"{adminDestination}\" pwsh -c yarn run dev; nt --title \"api prod\" -d \"{apiDestination}\" pwsh -c yarn run postinstall && yarn run start-dev-db",
+			"description": "client dev | admin prod | api prod | db dev"
+		},
+		{
+			"name": "dev-api",
+			"command": "nt --title \"api dev\" -d \"{apiDestination}\" pwsh -c code . && yarn run dev",
+			"description": "client dev | admin prod | api prod | db dev"
+		},
+		{
+			"name": "full-prod",
+			"command": "nt --title \"client prod\" -d \"{clientDestination}\" pwsh -c yarn run build && yarn run start-local; nt --title \"admin prod\" -d \"{adminDestination}\" pwsh -c yarn run build && yarn run start-local; nt --title \"api prod\" -d \"{apiDestination}\" pwsh -c yarn run postinstall && yarn run start",
+			"description": "client prod | admin prod | api prod | db prod"
+		}
+	]
+}
