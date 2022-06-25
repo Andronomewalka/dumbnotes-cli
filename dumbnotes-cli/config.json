@@ -8,22 +8,22 @@
 		{
 			"name": "dev-client",
 			"command": "nt --title \"client dev\" -d \"{clientDestination}\" pwsh -c code . && yarn run dev; nt --title \"api prod\" -d \"{apiDestination}\" pwsh -c yarn run postinstall && yarn run start-dev-db",
-			"description": "client dev | admin none | api prod | db dev"
+			"description": "client dev | api prod | db dev"
 		},
 		{
 			"name": "dev-admin",
 			"command": "nt --title \"admin dev\" -d \"{adminDestination}\" pwsh -c code . && yarn run dev; nt --title \"api prod\" -d \"{apiDestination}\" pwsh -c yarn run postinstall && yarn run start-dev-db",
-			"description": "client dev | admin dev | api prod | db dev"
+			"description": "admin dev | api prod | db dev"
 		},
 		{
 			"name": "dev-client-admin",
 			"command": "nt --title \"client dev\" -d \"{clientDestination}\" pwsh -c code . && yarn run dev; nt --title \"admin dev\" -d \"{adminDestination}\" pwsh -c yarn run dev; nt --title \"api prod\" -d \"{apiDestination}\" pwsh -c yarn run postinstall && yarn run start-dev-db",
-			"description": "client dev | admin prod | api prod | db dev"
+			"description": "client dev | admin dev | api prod | db dev"
 		},
 		{
 			"name": "dev-api",
 			"command": "nt --title \"api dev\" -d \"{apiDestination}\" pwsh -c code . && yarn run dev",
-			"description": "client dev | admin prod | api prod | db dev"
+			"description": "api dev | db dev"
 		},
 		{
 			"name": "full-prod",

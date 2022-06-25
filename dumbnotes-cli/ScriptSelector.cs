@@ -38,7 +38,7 @@
             {
                 Script script = scripts[i];
                 Console.ForegroundColor = i == hoverI ? ConsoleColor.Green : ConsoleColor.White;
-                Console.WriteLine($"{i + 1}: {script.Name.PadRight(26)} - ${script.Description}", ConsoleColor.Green);
+                Console.WriteLine($"{i + 1}: {script.Name.PadRight(26)} - {script.Description}", ConsoleColor.Green);
             }
         }
 
